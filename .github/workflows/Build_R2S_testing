@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_R2S_testing
+name: Build_x86_64
 
 on:
   workflow_dispatch:
@@ -83,9 +83,9 @@ jobs:
         # git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
         git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
-    - name: Configuration Customization - Build_R2S
+    - name: Configuration Customization - Build_x86_64
       env:
-        CONFIG_FILE: 'R2S_testing.config'
+        CONFIG_FILE: 'x86_64.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
