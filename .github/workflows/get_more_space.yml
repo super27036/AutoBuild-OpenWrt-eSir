@@ -1,4 +1,4 @@
-name: Build_NanoPi_R2S
+name: get_more_space
 
 # Add a button to trigger the workflow
 on: 
