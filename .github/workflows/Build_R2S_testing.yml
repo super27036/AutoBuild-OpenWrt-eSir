@@ -8,8 +8,11 @@
 name: R2S_testing_9_7
 
 # Add a button to trigger the workflow
-on: 
+on:
   workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   Build:
