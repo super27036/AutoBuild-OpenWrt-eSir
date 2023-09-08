@@ -1,9 +1,9 @@
 name: Build_NanoPi_R4S
 
 # Add a button to trigger the workflow
-# on: 
-#   repository_dispatch:
-#   workflow_dispatch:
+on: 
+  # repository_dispatch:
+  # workflow_dispatch:
 
 jobs:
   OpenWrt-18_06:
