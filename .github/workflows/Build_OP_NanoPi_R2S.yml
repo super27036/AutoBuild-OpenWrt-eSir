@@ -77,10 +77,18 @@ jobs:
     #    git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
     #    git clone "your_github_link" package/"your_folder_name"      
 
-    - name: Import external feeds - JerryKuKu Argon
+    - name: Import external feeds
       working-directory: ./openwrt
       run: |
+        git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
+        git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+        git clone https://github.com/vernesong/OpenClash.git package/OpenClash
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku
+        
+    - name: Copy FILES
+      run: |
+        cd openwrt
+        cp -rf ../PATCH/R2S/files ./files
 
     - name: Configuration Customization - Build_NanoPi_R2S
       run: |
