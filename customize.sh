@@ -7,7 +7,7 @@
 #=================================================
 
 #3. Replace with JerryKuKu’s Argon
-rm openwrt/package/lean/luci-theme-argon -rf
+# rm openwrt/package/lean/luci-theme-argon -rf
 
 
 # Modify default IP
