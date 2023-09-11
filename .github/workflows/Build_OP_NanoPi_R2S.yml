@@ -86,7 +86,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
+        #git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
         git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
         git clone https://github.com/super27035/lua-maxminddb.git package/lua-maxminddb
         git clone https://github.com/vernesong/OpenClash.git package/OpenClash
